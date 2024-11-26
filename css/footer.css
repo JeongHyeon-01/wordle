@@ -1,0 +1,42 @@
+.keyboard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.keyboard-row {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0px;
+}
+
+button {
+    width: 40px;
+    height: 60px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    background-color: #e0e0e0;
+    cursor: pointer;
+    font-size: 16px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #d0d0d0;
+}
+
+button:active {
+    background-color: #c0c0c0;
+}
+
+.oneAndAHalf {
+    width: 100px;
+}
+
+.spacer {
+    width: 20px;
+}

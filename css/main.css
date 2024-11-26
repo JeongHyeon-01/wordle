@@ -1,0 +1,23 @@
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.board-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.board-block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid #D3d6da;
+    width: 60px;
+    height: 60px;
+}
