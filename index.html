@@ -23,88 +23,103 @@
       </div>
     </header>
     <main>
+      <div id="timer">time 00:00</div>
       <div class="board-row row-0">
-        <div class="board-block"></div>
-        <div class="board-block"></div>
-        <div class="board-block"></div>
-        <div class="board-block"></div>
-        <div class="board-block"></div>
+        <div class="board-column" data-index="00"></div>
+        <div class="board-column" data-index="01"></div>
+        <div class="board-column" data-index="02"></div>
+        <div class="board-column" data-index="03"></div>
+        <div class="board-column" data-index="04"></div>
       </div>
       <div class="board-row row-1">
-        <div class="board-block"></div>
-        <div class="board-block"></div>
-        <div class="board-block"></div>
-        <div class="board-block"></div>
-        <div class="board-block"></div>
+        <div class="board-column" data-index="10"></div>
+        <div class="board-column" data-index="11"></div>
+        <div class="board-column" data-index="12"></div>
+        <div class="board-column" data-index="13"></div>
+        <div class="board-column" data-index="14"></div>
       </div>
       <div class="board-row row-2">
-        <div class="board-block"></div>
-        <div class="board-block"></div>
-        <div class="board-block"></div>
-        <div class="board-block"></div>
-        <div class="board-block"></div>
+        <div class="board-column" data-index="20"></div>
+        <div class="board-column" data-index="21"></div>
+        <div class="board-column" data-index="22"></div>
+        <div class="board-column" data-index="23"></div>
+        <div class="board-column" data-index="24"></div>
       </div>
       <div class="board-row row-3">
-        <div class="board-block"></div>
-        <div class="board-block"></div>
-        <div class="board-block"></div>
-        <div class="board-block"></div>
-        <div class="board-block"></div>
+        <div class="board-column" data-index="30"></div>
+        <div class="board-column" data-index="31"></div>
+        <div class="board-column" data-index="32"></div>
+        <div class="board-column" data-index="33"></div>
+        <div class="board-column" data-index="34"></div>
       </div>
       <div class="board-row row-4">
-        <div class="board-block"></div>
-        <div class="board-block"></div>
-        <div class="board-block"></div>
-        <div class="board-block"></div>
-        <div class="board-block"></div>
+        <div class="board-column" data-index="40"></div>
+        <div class="board-column" data-index="41"></div>
+        <div class="board-column" data-index="42"></div>
+        <div class="board-column" data-index="43"></div>
+        <div class="board-column" data-index="44"></div>
       </div>
       <div class="board-row row-5">
-        <div class="board-block"></div>
-        <div class="board-block"></div>
-        <div class="board-block"></div>
-        <div class="board-block"></div>
-        <div class="board-block"></div>
+        <div class="board-column" data-index="50"></div>
+        <div class="board-column" data-index="51"></div>
+        <div class="board-column" data-index="52"></div>
+        <div class="board-column" data-index="53"></div>
+        <div class="board-column" data-index="54"></div>
       </div>
     </main>
     <footer>
-        <div class="keyboard" role="group" aria-label="Keyboard">
-            <div class="keyboard-row">
-                <button type="button" data-key="q" aria-label="add q">q</button>
-                <button type="button" data-key="w" aria-label="add w">w</button>
-                <button type="button" data-key="e" aria-label="add e">e</button>
-                <button type="button" data-key="r" aria-label="add r">r</button>
-                <button type="button" data-key="t" aria-label="add t">t</button>
-                <button type="button" data-key="y" aria-label="add y">y</button>
-                <button type="button" data-key="u" aria-label="add u">u</button>
-                <button type="button" data-key="i" aria-label="add i">i</button>
-                <button type="button" data-key="o" aria-label="add o">o</button>
-                <button type="button" data-key="p" aria-label="add p">p</button>
-            </div>
-            <div class="keyboard-row">
-                <div class="spacer"></div>
-                <button type="button" data-key="a" aria-label="add a">a</button>
-                <button type="button" data-key="s" aria-label="add s">s</button>
-                <button type="button" data-key="d" aria-label="add d">d</button>
-                <button type="button" data-key="f" aria-label="add f">f</button>
-                <button type="button" data-key="g" aria-label="add g">g</button>
-                <button type="button" data-key="h" aria-label="add h">h</button>
-                <button type="button" data-key="j" aria-label="add j">j</button>
-                <button type="button" data-key="k" aria-label="add k">k</button>
-                <button type="button" data-key="l" aria-label="add l">l</button>
-                <div class="spacer"></div>
-            </div>
-            <div class="keyboard-row">
-                <button type="button" data-key="↵" aria-label="enter" class="oneAndAHalf">enter</button>
-                <button type="button" data-key="z" aria-label="add z">z</button>
-                <button type="button" data-key="x" aria-label="add x">x</button>
-                <button type="button" data-key="c" aria-label="add c">c</button>
-                <button type="button" data-key="v" aria-label="add v">v</button>
-                <button type="button" data-key="b" aria-label="add b">b</button>
-                <button type="button" data-key="n" aria-label="add n">n</button>
-                <button type="button" data-key="m" aria-label="add m">m</button>
-                <button type="button" data-key="←" aria-label="backspace" class="oneAndAHalf">backspace</button>
-            </div>
+      <div class="keyboard" role="group" aria-label="Keyboard">
+        <div class="keyboard-row">
+          <button type="button" data-key="q" aria-label="add q">q</button>
+          <button type="button" data-key="w" aria-label="add w">w</button>
+          <button type="button" data-key="e" aria-label="add e">e</button>
+          <button type="button" data-key="r" aria-label="add r">r</button>
+          <button type="button" data-key="t" aria-label="add t">t</button>
+          <button type="button" data-key="y" aria-label="add y">y</button>
+          <button type="button" data-key="u" aria-label="add u">u</button>
+          <button type="button" data-key="i" aria-label="add i">i</button>
+          <button type="button" data-key="o" aria-label="add o">o</button>
+          <button type="button" data-key="p" aria-label="add p">p</button>
         </div>
+        <div class="keyboard-row">
+          <div class="spacer"></div>
+          <button type="button" data-key="a" aria-label="add a">a</button>
+          <button type="button" data-key="s" aria-label="add s">s</button>
+          <button type="button" data-key="d" aria-label="add d">d</button>
+          <button type="button" data-key="f" aria-label="add f">f</button>
+          <button type="button" data-key="g" aria-label="add g">g</button>
+          <button type="button" data-key="h" aria-label="add h">h</button>
+          <button type="button" data-key="j" aria-label="add j">j</button>
+          <button type="button" data-key="k" aria-label="add k">k</button>
+          <button type="button" data-key="l" aria-label="add l">l</button>
+          <div class="spacer"></div>
+        </div>
+        <div class="keyboard-row">
+          <button
+            type="button"
+            data-key="↵"
+            aria-label="enter"
+            class="oneAndAHalf"
+          >
+            enter
+          </button>
+          <button type="button" data-key="z" aria-label="add z">z</button>
+          <button type="button" data-key="x" aria-label="add x">x</button>
+          <button type="button" data-key="c" aria-label="add c">c</button>
+          <button type="button" data-key="v" aria-label="add v">v</button>
+          <button type="button" data-key="b" aria-label="add b">b</button>
+          <button type="button" data-key="n" aria-label="add n">n</button>
+          <button type="button" data-key="m" aria-label="add m">m</button>
+          <button
+            type="button"
+            data-key="←"
+            aria-label="backspace"
+            class="oneAndAHalf"
+          >
+            backspace
+          </button>
+        </div>
+      </div>
     </footer>
   </body>
 </html>
