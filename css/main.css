@@ -20,4 +20,11 @@ main{
     border: 3px solid #D3d6da;
     width: 60px;
     height: 60px;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+#timer {
+    font-weight: bold;
+    font-size: 20px;
 }
