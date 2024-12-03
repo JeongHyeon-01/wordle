@@ -2,3 +2,55 @@
 @import "header.css";
 @import "main.css";
 @import "footer.css";
+@keyframes correctAnimation {
+    0% {
+      background-color: #6aaa64;
+    }
+    50% {
+      background-color: #85d185;
+    }
+    100% {
+      background-color: #6aaa64;
+    }
+  }
+
+  @keyframes presentAnimation {
+    0% {
+      background-color: #c9b458;
+    }
+    50% {
+      background-color: #e6cc74;
+    }
+    100% {
+      background-color: #c9b458;
+    }
+  }
+  
+
+  @keyframes absentAnimation {
+    0% {
+      background-color: #787c7e;
+    }
+    50% {
+      background-color: #9a9e9f;
+    }
+    100% {
+      background-color: #787c7e;
+    }
+  }
+  
+  .correct {
+    animation: correctAnimation 0.5s ease-out forwards;
+    color: white;
+  }
+  
+  .present {
+    animation: presentAnimation 0.5s ease-out forwards;
+    color: white;
+  }
+  
+  .absent {
+    animation: absentAnimation 0.5s ease-out forwards;
+    color: white;
+  }
+  

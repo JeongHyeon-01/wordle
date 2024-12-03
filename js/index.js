@@ -5,6 +5,32 @@ let answer = "";
 let timer
 
 function appStart() {
+
+  const HandleKeyboardClick = () => {
+    const keyBtn = document.querySelector('.keyboard');
+    keyBtn.addEventListener('click', function (event) {
+      const dataKey = event.target.getAttribute('data-key');
+      const thisBlock = document.querySelector(
+        `.board-column[data-index='${attempts}${index}']`
+      );
+  
+      if (!dataKey) return;
+  
+      if (dataKey === '←') {
+        handleBackspace(thisBlock, index);
+      } else if (dataKey === '↵') {
+        if (index === 5) {
+          handleEnterKey();
+        }
+      } else {
+        if (index < 5) {
+          thisBlock.innerText = dataKey.toUpperCase();
+          index++;
+        }
+      }
+    });
+  };
+
   const displayGameOver = () => {
     const div = document.createElement("div");
     div.innerText = "게임이 종료 되었습니다.";
@@ -44,23 +70,31 @@ function appStart() {
       );
       const inputText = block.innerText;
       const correctText = correct[i];
-
+  
+      // 정답인 경우
       if (inputText === correctText) {
-        block.style.background = "#6AAA64";
+        block.classList.add("correct");
         correctCnt += 1;
-      } else if (correct.includes(inputText)) {
-        block.style.background = "#C9B458";
-      } else {
-        block.style.background = "#787C7E";
       }
-      block.style.color = "white";
+      // 위치만 맞는 경우
+      else if (correct.includes(inputText)) {
+        block.classList.add("present");
+      }
+      // 틀린 경우
+      else {
+        block.classList.add("absent");
+      }
     }
+  
+    // 정답을 모두 맞힌 경우
     if (correctCnt === 5) {
       gameOver();
     } else {
       nextLine();
     }
   };
+  
+  
 
   const handleKeydown = (e) => {
     const key = e.key;
@@ -94,8 +128,11 @@ function appStart() {
     timer = setInterval(setTime, 1000);
   }
   startTimer();
-
+  HandleKeyboardClick();
   window.addEventListener("keydown", handleKeydown);
 }
+
+
+
 
 appStart();
